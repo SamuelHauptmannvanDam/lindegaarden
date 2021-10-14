@@ -10,14 +10,12 @@ export function bookingFunction(centeringBox, language) {
 
     const breakfastTitle = document.createElement('breakfastTitle');
     breakfastTitle.id = "breakfastTitleID"
-        // breakfastTitle.innerHTML = "Organic breakfast 13 euro <br> Children half price"
     breakfastTitle.className = "infoTitle"
     bookingFrameDescription.appendChild(breakfastTitle);
 
 
     const bookingFrameDescriptionText = document.createElement('bookingFrameDescriptionText');
     bookingFrameDescriptionText.id = "bookingFrameDescriptionTextID"
-        // bookingFrameDescriptionText.innerHTML = "2 kinds of cheeses or sausage, 1 slice of home-baked rye bread, 1 home-baked long-leavened bun, butter, jam, Greek yogurt with berries and homemade muesli, a piece of sweet, juice, tea or coffee. <br> <br> Upon request, the delicious breakfast is served between 7.30-10.30."
     bookingFrameDescription.appendChild(bookingFrameDescriptionText);
 
     const bookingFrameCost = document.createElement('bookingFrameCost');
@@ -29,7 +27,16 @@ export function bookingFunction(centeringBox, language) {
     const bookingDirect = document.createElement('a');
     bookingDirect.id = "bookingDirectID";
     bookingDirect.className = "bookingDirectClass";
-    // bookingDirect.innerHTML = "BOOK DIRECTLY"
+    bookingDirect.innerHTML = "BOOK DIRECTLY"
+
+
+
+    const bookingBottomButton = document.createElement('a');
+    bookingBottomButton.id = "bookingBottomButtonID"
+    bookingBottomButton.innerHTML = ""
+    bookingBottomButton.className = "bookingDirectClass2"
+    bookingBottomButton.href = "mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.                              %0D%0DVelkommen til Lindegaardens booking på mail.%0DSkriv blot hvilke værelse(r) der ønskes:                              %0D%0DHvor mange personer I er:                              %0D%0Dom der ønskes lækker økologisk morgenmad:                              %0D%0DOg selvfølgelig hvilke nætter I ønsker at booke:                              %0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802%0D%0DVi glæder os til at tage imod jer%0DDe bedste hilsner%0DLisbeth"
+    centeringBox.appendChild(bookingBottomButton);
 
 
     fetch('https://api.geoapify.com/v1/ipinfo?apiKey=fb0e13a6fe3b4773ab9d95edbbd12e7e')
@@ -149,8 +156,5 @@ export function bookingFunction(centeringBox, language) {
             window.open(link)
         }
     }
-
-
-
 
 }

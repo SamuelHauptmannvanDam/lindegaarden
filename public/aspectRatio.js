@@ -4,7 +4,7 @@ export function checkScreenAspect() {
         let h = window.innerHeight;
         let aspectFactor = w / h;
 
-        if (aspectFactor > 1) {
+        if (aspectFactor > 1.5) {
             document.getElementById("CenteringBoxID").style.width = "40%";
             document.getElementById("pictureFrameID").style.flexDirection = "row";
             document.getElementById("pictureFrameLargeID").style.width = "100%";
@@ -13,6 +13,7 @@ export function checkScreenAspect() {
             document.getElementById("bookingFrameDescriptionID").style.width = "50%";
             document.getElementById("bookingFrameCostID").style.width = "50%";
             document.getElementById("bookingBottomButtonID").style.width = "30%";
+            document.getElementById("iframID").height = document.getElementById('mapID').getBoundingClientRect().width;
 
         } else { // UI changes for phones / screens taller than wide.
             document.getElementById("CenteringBoxID").style.width = "100%";
@@ -23,7 +24,22 @@ export function checkScreenAspect() {
             document.getElementById("bookingFrameDescriptionID").style.width = "100%";
             document.getElementById("bookingFrameCostID").style.width = "100%";
             document.getElementById("bookingBottomButtonID").style.width = "80%";
+            document.getElementById("iframID").height = document.getElementById('mapID').getBoundingClientRect().width;
+        }
+    }
+}
 
+export function checkScreenAspectForFeedback() {
+    window.onresize = window.onload = function() {
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        let aspectFactor = w / h;
+
+        if (aspectFactor > 1.5) {
+            document.getElementById("CenteringBoxID").style.width = "40%";
+
+        } else { // UI changes for phones / screens taller than wide.
+            document.getElementById("CenteringBoxID").style.width = "100%";
         }
     }
 }

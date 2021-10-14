@@ -9,6 +9,10 @@ const centeringBox = document.createElement('centeringBox');
 centeringBox.id = "CenteringBoxID";
 flexBox.appendChild(centeringBox);
 
+const growBoxTop = document.createElement('growBoxTop');
+// growBoxTop.id = "growBoxTopID"
+centeringBox.appendChild(growBoxTop);
+
 const titleDescription = document.createElement('titleDescription');
 titleDescription.innerHTML = "Lindegaarden Bed & Breakfast"
 titleDescription.onclick = function() { linkHome() };
@@ -24,39 +28,29 @@ function linkHome() {
 }
 
 import { imagesFunction } from './imageFunction.js'
-imagesFunction(centeringBox)
+// imagesFunction(centeringBox)
 
 import { bookingFunction } from './bookingFunction.js'
-bookingFunction(centeringBox)
-
-import { language } from './language.js'
-language(centeringBox)
+// bookingFunction(centeringBox)
 
 import { historyContactFunction } from './historyContactFunction.js'
-historyContactFunction(centeringBox)
+// historyContactFunction(centeringBox)
+
+
 
 import { feedback } from './feedback.js'
 feedback(centeringBox)
 
 
 
-import { checkScreenAspect, adjustScreenWidth } from './aspectRatio.js'
-checkScreenAspect()
+import { languageFeedback } from './language.js'
+languageFeedback(centeringBox)
+
+const growBoxBottom = document.createElement('growBoxBottom');
+// growBoxBottom.id = "growBoxBottomID"
+centeringBox.appendChild(growBoxBottom);
+
+
+import { checkScreenAspectForFeedback, adjustScreenWidth } from './aspectRatio.js'
+checkScreenAspectForFeedback()
 adjustScreenWidth()
-
-const paddingboxBottom = document.createElement('paddingboxBottom');
-centeringBox.appendChild(paddingboxBottom);
-
-
-
-import { toDanish, toEnglish } from './language.js'
-fetch('https://api.geoapify.com/v1/ipinfo?apiKey=fb0e13a6fe3b4773ab9d95edbbd12e7e')
-    .then(resp => resp.json())
-    .then((userLocationData) => {
-        if (userLocationData.country.name == "Denmark") {
-            toDanish()
-
-        } else {
-            toEnglish()
-        }
-    });
