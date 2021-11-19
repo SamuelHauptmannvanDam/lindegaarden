@@ -1,7 +1,13 @@
 export function bookingFunction(centeringBox, language) {
+
+    const bookingFrameBlock = document.createElement('bookingFrameBlock');
+    // bookingFrame.id = "bookingFrameID"
+    centeringBox.appendChild(bookingFrameBlock);
+
+    
     const bookingFrame = document.createElement('bookingFrame');
     bookingFrame.id = "bookingFrameID"
-    centeringBox.appendChild(bookingFrame);
+    bookingFrameBlock.appendChild(bookingFrame);
 
     const bookingFrameDescription = document.createElement('bookingFrameDescription');
     bookingFrameDescription.id = "bookingFrameDescriptionID"

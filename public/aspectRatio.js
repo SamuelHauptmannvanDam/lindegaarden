@@ -4,7 +4,7 @@ export function checkScreenAspect() {
         let h = window.innerHeight;
         let aspectFactor = w / h;
 
-        if (aspectFactor > 1.5) {
+        if (aspectFactor > 1.2) {
             document.getElementById("CenteringBoxID").style.width = "40%";
             document.getElementById("pictureFrameID").style.flexDirection = "row";
             document.getElementById("pictureFrameLargeID").style.width = "100%";
@@ -35,7 +35,7 @@ export function checkScreenAspectForFeedback() {
         let h = window.innerHeight;
         let aspectFactor = w / h;
 
-        if (aspectFactor > 1.5) {
+        if (aspectFactor > 1.2) {
             document.getElementById("CenteringBoxID").style.width = "40%";
 
         } else { // UI changes for phones / screens taller than wide.

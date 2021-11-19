@@ -1,7 +1,7 @@
 html,
 body {
     margin: 0px 4px 0px 4px;
-    min-width: 200px;
+    min-width: 280px;
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
     -moz-animation: fadeIn ease 2s;
@@ -26,13 +26,13 @@ flexBox {
 centeringBox {
     /* outline: red solid 1px; */
     display: flex;
-    min-width: 200px;
+    min-width: 280px;
     width: 100%;
     flex-direction: column;
-    min-width: 150px;
 }
 
 titleDescription {
+    display: block;
     font-family: 'Amatic SC', cursive;
     font-size: 40px;
     font-weight: bold;
@@ -43,6 +43,7 @@ titleDescription {
 }
 
 subtitleDescription {
+    display: block;
     font-family: 'Amatic SC', cursive;
     font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1800 - 300)));
     font-weight: bold;
@@ -52,52 +53,64 @@ subtitleDescription {
     padding-bottom: 10px;
 }
 
+pictureFrameBlock{
+    display: block;
+}
+
 pictureFrame {
     cursor: pointer;
     display: flex;
-    flex-direction: "column";
-
 }
 
 pictureFrameLarge {
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-justify-content: center;
-    width: 100%;
-}
-
-imgLarge{
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
 }
 
 pictureFrameSmall {
-    display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    /* align-items: center;
     justify-content: space-around;
-    -webkit-justify-content: space-around;
-    width: 100%;
+    -webkit-justify-content: space-around; */
+    display: flex;
+
+    align-items: center;
+  justify-content: center;
+    /* padding-top: 4px */
 }
 
-.imgSmall{
-    display: flex;
+.smallPictureImage{
+    /* display: block; */
+    /* margin: 40px; */
+    /* width: 100px;
+    height: 100px; */
+    width: calc(50% - 4px);
+    height: calc(50% - 4px);
+    margin: 2px;
 }
 
 img {
     border-radius: 20px;
+    /* margin: 4px; */
     /* z-index: -1; */
+}
+
+bookingFrameBlock{
+    display: block;
 }
 
 bookingFrame {
     display: flex;
     padding: 10px 00px 00px 00px;
-    flex-direction: column-reverse;
 }
 
 bookingFrameDescription {
     display: block;
-    width: 100%;
+    width: 50%;
     /* padding: 00px 00px 10px 00px; */
 }
 
@@ -111,7 +124,7 @@ bookingFrameDescriptionText {
 }
 
 bookingFrameCost {
-    width: 100%;
+    width: 50%;
     border-radius: 20px;
     box-shadow: 0px 0px 5px grey;
     /* outline: red solid 1px; */
@@ -184,6 +197,7 @@ mobilepay {
 }
 
 .info {
+    display: block;
     padding: 10px 20px 10px 20px;
 }
 
@@ -191,6 +205,10 @@ mobilepay {
     display: block;
     font-weight: 500;
     font-size: 20px;
+}
+
+languageBoxBlock{
+    display: block;
 }
 
 languageBox {
@@ -211,7 +229,7 @@ languageButtonEnglish {
 
 paddingboxBottom {
     /* outline: red 1px solid; */
-    padding-bottom: 140px;
+    padding-bottom: 240px;
     /* margin: 200px; */
 }
 
@@ -288,7 +306,7 @@ bookingBottomButton {
     bottom: 0px;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 80%;
+    width: 30%;
     padding-top: 20px;
     padding-bottom: 20px;
     /* display: flex; */
