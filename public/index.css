@@ -2,11 +2,24 @@ html,
 body {
     margin: 0px 4px 0px 4px;
     min-width: 280px;
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
+    -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
+    -moz-animation: 1s ease 0s normal forwards 1 fadein;
+    -o-animation: 1s ease 0s normal forwards 1 fadein;
+    -ms-animation: 1s ease 0s normal forwards 1 fadein;
+}
+
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
 }
 
 body {
@@ -16,6 +29,8 @@ body {
 }
 
 flexBox {
+    /* -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein; */
     display: flex;
     /* outline: red solid 1px; */
     height: 96vh;
@@ -233,15 +248,15 @@ paddingboxBottom {
     /* margin: 200px; */
 }
 
-.fade-in {
+/* .fade-in {
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
     -moz-animation: fadeIn ease 2s;
     -o-animation: fadeIn ease 2s;
     -ms-animation: fadeIn ease 2s;
-}
+} */
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -284,7 +299,7 @@ paddingboxBottom {
     100% {
         opacity: 1;
     }
-}
+} */
 
 map {
     padding: 10px 20px 10px 20px;
@@ -363,6 +378,11 @@ settingBox {
 }
 
 feedbackBox {
+    -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
+    -moz-animation: 1s ease 0s normal forwards 1 fadein;
+    -o-animation: 1s ease 0s normal forwards 1 fadein;
+    -ms-animation: 1s ease 0s normal forwards 1 fadein;
     /* outline: 1px red solid; */
     display: block;
     /* padding-bottom: 120px; */
@@ -390,6 +410,11 @@ feedbackHeartBox {
 }
 
 ratingBox {
+    -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
+    -moz-animation: 1s ease 0s normal forwards 1 fadein;
+    -o-animation: 1s ease 0s normal forwards 1 fadein;
+    -ms-animation: 1s ease 0s normal forwards 1 fadein;
     /* outline: 1px green solid; */
     display: block;
     /* transition-duration: 1s; */
