@@ -26,7 +26,7 @@ export function historyContactFunction(centeringBox) {
 
     const kontakt = document.createElement('kontakt');
     kontakt.id = "kontaktID"
-        // kontakt.innerHTML = "Lisbeth Hauptmann <br> <a href='https://goo.gl/maps/cdab5TEhM2XbmaeB9'> Herslev Bygade 1 4000 Roskilde </a> <br> Phone: <a href='tel:+4571707802'> 71707802 </a> <br> Send an email to <a href='mailto: lindegaardenbnb@gmail.com'> lindegaardenbnb@gmail.com </a>"
+    
     kontaktBox.appendChild(kontakt);
 
     const map = document.createElement('map');

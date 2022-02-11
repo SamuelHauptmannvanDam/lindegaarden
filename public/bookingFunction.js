@@ -42,6 +42,16 @@ export function bookingFunction(centeringBox, language) {
     bookingBottomButton.innerHTML = ""
     bookingBottomButton.className = "bookingDirectClass2"
     bookingBottomButton.href = "mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.                              %0D%0DVelkommen til Lindegaardens booking på mail.%0DSkriv blot hvilke værelse(r) der ønskes:                              %0D%0DHvor mange personer I er:                              %0D%0Dom der ønskes lækker økologisk morgenmad:                              %0D%0DOg selvfølgelig hvilke nætter I ønsker at booke:                              %0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802%0D%0DVi glæder os til at tage imod jer%0DDe bedste hilsner%0DLisbeth"
+
+
+
+
+
+
+    
+
+
+
     centeringBox.appendChild(bookingBottomButton);
 
 
