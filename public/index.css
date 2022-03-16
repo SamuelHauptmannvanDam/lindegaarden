@@ -2,11 +2,6 @@ html,
 body {
     margin: 0px 4px 0px 4px;
     min-width: 280px;
-    -webkit-animation: 1s ease 0s normal forwards 1 fadein;
-    animation: 1s ease 0s normal forwards 1 fadein;
-    -moz-animation: 1s ease 0s normal forwards 1 fadein;
-    -o-animation: 1s ease 0s normal forwards 1 fadein;
-    -ms-animation: 1s ease 0s normal forwards 1 fadein;
 }
 
 
@@ -29,17 +24,13 @@ body {
 }
 
 flexBox {
-    /* -webkit-animation: 3s ease 0s normal forwards 1 fadein;
-    animation: 3s ease 0s normal forwards 1 fadein; */
     display: flex;
-    /* outline: red solid 1px; */
     height: 96vh;
     height: calc(var(--vh, 1vh) * 100);
     justify-content: center;
 }
 
 centeringBox {
-    /* outline: red solid 1px; */
     display: flex;
     min-width: 280px;
     width: 100%;
@@ -82,15 +73,13 @@ pictureFrameLarge {
     align-items: center;
     justify-content: center;
     display: -webkit-flex;
-    display: flex;
+    width: 100%;
     -webkit-justify-content: center;
 }
 
 pictureFrameSmall {
     flex-flow: row wrap;
-    /* align-items: center;
-    justify-content: space-around;
-    -webkit-justify-content: space-around; */
+    width: 100%;
     display: flex;
 
     align-items: center;
@@ -248,59 +237,6 @@ paddingboxBottom {
     /* margin: 200px; */
 }
 
-/* .fade-in {
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
-} */
-
-/* @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
-
 map {
     padding: 10px 20px 10px 20px;
 }
@@ -366,9 +302,6 @@ settingBox {
     box-shadow: 0px 0px 5px grey;
     margin: 20px;
     cursor: pointer;
-    /* padding-top: 10px; */
-    /* font-size: 20px; */
-    /* font-weight: 900; */
 }
 
 .roomFrame {
@@ -415,9 +348,7 @@ ratingBox {
     -moz-animation: 1s ease 0s normal forwards 1 fadein;
     -o-animation: 1s ease 0s normal forwards 1 fadein;
     -ms-animation: 1s ease 0s normal forwards 1 fadein;
-    /* outline: 1px green solid; */
     display: block;
-    /* transition-duration: 1s; */
     min-height: 120px;
     text-align: center;
     display: none;
@@ -447,3 +378,63 @@ growBoxBottom {
     display: flex;
     flex-grow: 1;
 }
+
+
+
+@media (max-width: 34rem) {
+    CenteringBox {
+     width: 34rem;
+     min-width: 280px;
+    }
+    pictureFrame {
+        flex-direction: column;
+      }
+
+      bookingFrame{
+        flex-direction: column-reverse;
+      }
+
+      
+    bookingFrameDescription{
+        width: 100%;
+    }
+
+    bookingFrameCost{
+        width: 100%;
+    }
+
+    #bookingBottomButtonID{
+        width: 68vw;
+    }
+ 
+  }
+  
+  @media (min-width: 34rem) {
+    CenteringBox {
+      width: 34rem;
+    }
+
+    pictureFrame {
+        flex-direction: row;
+    }
+
+    bookingFrame{
+        flex-direction: row;
+    }
+
+    bookingFrameDescription{
+        width: 50%;
+    }
+
+    bookingFrameCost{
+        width: 50%;
+    }
+
+    #bookingBottomButtonID {
+        width: 30rem;
+    }
+
+    
+    
+}
+
