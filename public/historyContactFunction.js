@@ -11,7 +11,6 @@ export function historyContactFunction(centeringBox) {
 
     const checkin = document.createElement('checkin');
     checkin.id = "checkinID"
-        // checkin.innerHTML = "You can check in from kl. 14 and must be checked out the next day no later than kl. 12. <br> The price is incl. bed linen and towel. <br> Payment on mobilpay when booking or no later than 5 days before accommodation."
     checkinBox.appendChild(checkin);
 
     const kontaktBox = document.createElement('kontaktBox');
@@ -45,7 +44,20 @@ export function historyContactFunction(centeringBox) {
 
     const setting = document.createElement('setting');
     setting.id = "settingID"
-        // setting.innerHTML = "In Fjordland's fantastic nature and in the middle of the idyllic village Herslev, Lindegaarden is located on Herslev Bygade 1, next door to Herslev Bryghus and Friis Holm chocolate factory. Combine a beer tasting, a tour or communal dining at Bryghuset, with a cozy overnight stay in Lindegaarden's relaxing surroundings. <br> <a href='https://herslevbryghus.dk'> herslevbryghus.dk </a> <br> <br> It is possible to buy a beer from Herslev brewery, a bottle of wine or juice, chips and chocolate from the chocolate factory. <br> <br> The church and the bus stop are located directly opposite Lindegaarden and the lovely beach by Roskilde fjord, is within walking distance. The possibilities are many in the Fjordland, close to large forests, historical sights and beautiful cycle routes, but also close to the historic city of Roskilde. fair, eventful capital Copenhagen. <br> <br> At Lindegaarden there are 3 double rooms. There is also a large shared bathroom and a cozy dining and living room where you can play games or read in books and newspapers. <br> <br> In addition, there is a beautiful large garden with cozy nooks and space to move, a sandbox, campfire site and the most beautiful views with deer and birds, starry nights and silence. <br> <br> Lindegaarden also offers art exhibitions, concerts, lectures, yoga events etc. in the salon and sales of recycled furniture from Bizar vintage in our large barn. The salon's calendar is also posted on our <a href='https://www.facebook.com/Lindegaardenbnb'> facebook page </a>. We have 2 cats that you are welcome to pet."
     settingBox.appendChild(setting);
+
+    const rentBox = document.createElement('rentBox');
+    rentBox.id="rentBoxID"
+    rentBox.className = "info"
+    centeringBox.appendChild(rentBox);
+
+    const rentTitle = document.createElement('rentTitle');
+    rentTitle.innerHTML = "Leje af Lindegaardens Saloner"
+    rentTitle.className = "infoTitle"
+    rentBox.appendChild(rentTitle);
+
+    const rentDescription = document.createElement('rentDescription');
+    rentDescription.id = "rentDescriptionID"
+    rentBox.appendChild(rentDescription);
 
 }

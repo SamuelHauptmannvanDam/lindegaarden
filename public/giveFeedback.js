@@ -10,7 +10,6 @@ centeringBox.id = "CenteringBoxID";
 flexBox.appendChild(centeringBox);
 
 const growBoxTop = document.createElement('growBoxTop');
-// growBoxTop.id = "growBoxTopID"
 centeringBox.appendChild(growBoxTop);
 
 const titleDescription = document.createElement('titleDescription');
@@ -28,28 +27,17 @@ function linkHome() {
 }
 
 import { imagesFunction } from './imageFunction.js'
-// imagesFunction(centeringBox)
-
 import { bookingFunction } from './bookingFunction.js'
-// bookingFunction(centeringBox)
-
 import { historyContactFunction } from './historyContactFunction.js'
-// historyContactFunction(centeringBox)
-
-
 
 import { feedback } from './feedback.js'
 feedback(centeringBox)
-
-
 
 import { languageFeedback } from './language.js'
 languageFeedback(centeringBox)
 
 const growBoxBottom = document.createElement('growBoxBottom');
-// growBoxBottom.id = "growBoxBottomID"
 centeringBox.appendChild(growBoxBottom);
-
 
 import { checkScreenAspectForFeedback, adjustScreenWidth } from './aspectRatio.js'
 checkScreenAspectForFeedback()

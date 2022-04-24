@@ -51,20 +51,20 @@ export function bookingFunction(centeringBox, language) {
             if (userLocationData.country.name == "Denmark") {
                 bookingDirect.href = "mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.%0D%0DVelkommen til Lindegaardens booking på mail.%0D%0DSkriv blot hvilke værelse(r) der ønskes:%0D%0DHvor mange personer I er:%0D%0DOm der ønskes lækker økologisk morgenmad:%0D%0DHvilke nætter I ønsker at booke:%0D%0DTelefonnummer til kontakt:%0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802 eller skriv her:%0D%0DVi glæder os til at tage imod jer%0D%0DDe bedste hilsner Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde%0D"
 
-                sunRoom("575 kr / nat", "<i>Solværelset: </i>stor dobbeltseng<br>Mulig ekstra opredning af madras 100 kr.", "https://www.airbnb.dk/rooms/50245477?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_qutief9GI1VhK5Ii&guests=1&adults=1")
+                sunRoom("650 kr / nat", "<i>Solværelset: </i>stor dobbeltseng<br>Mulig ekstra opredning af madras 200 kr.", "https://www.airbnb.dk/rooms/50245477?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_qutief9GI1VhK5Ii&guests=1&adults=1")
 
-                skyRoom("475 kr / nat", "<i>Himmelrummet:</i> lille dobbeltseng", "https://www.airbnb.dk/rooms/50240587?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532448_dH7cpFG6Qv0cSTMe&guests=1&adults=1")
+                skyRoom("575 kr / nat", "<i>Himmelrummet:</i> lille dobbeltseng", "https://www.airbnb.dk/rooms/50240587?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532448_dH7cpFG6Qv0cSTMe&guests=1&adults=1")
 
-                studentRoom("475 kr / nat", "<i>Studerekammeret:</i> 2 enkelte senge, kan rykkes sammen", "https://www.airbnb.dk/rooms/50003907?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_F3oSvw5Pw%2BacT%2BOu&guests=1&adults=1")
+                studentRoom("575 kr / nat", "<i>Studerekammeret:</i> 2 enkelte senge, kan rykkes sammen", "https://www.airbnb.dk/rooms/50003907?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_F3oSvw5Pw%2BacT%2BOu&guests=1&adults=1")
 
             } else {
                 bookingDirect.href = "mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Dear Guest.%0D%0DWelcome to Lindegaarden's booking by email.%0D%0DJust write which room (s) you want:%0D%0DHow many people are you:%0D%0DIf you want a delicious organic breakfast:%0D%0DWhich nights do you want to book:%0D%0DPhone number for contact:%0D%0DShould there be any questions, you are welcome to call 71707802 or write here:%0D%0DWe look forward to welcoming you%0D%0DBest regards Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde"
 
-                sunRoom("79 euro / night ", "<i> Sun room: </i> large double bed <br> Possible extra bed mattress 14 euro.", "https://www.airbnb.dk/rooms/50245477?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_qutief9GI1VhK5Ii&guests=1&adults=1")
+                sunRoom("89 euro / night ", "<i> Sun room: </i> large double bed <br> Possible extra bed mattress 28 euro.", "https://www.airbnb.dk/rooms/50245477?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_qutief9GI1VhK5Ii&guests=1&adults=1")
 
-                skyRoom("65 euro / night ", "<i>The Sky room: </i> small double bed", "https://www.airbnb.dk/rooms/50240587?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532448_dH7cpFG6Qv0cSTMe&guests=1&adults=1")
+                skyRoom("79 euro / night ", "<i>The Sky room: </i> small double bed", "https://www.airbnb.dk/rooms/50240587?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532448_dH7cpFG6Qv0cSTMe&guests=1&adults=1")
 
-                studentRoom("65 euro / night ", "<i>The Study room: </i> 2 single beds, can be moved together", "https://www.airbnb.dk/rooms/50003907?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_F3oSvw5Pw%2BacT%2BOu&guests=1&adults=1")
+                studentRoom("79 euro / night ", "<i>The Study room: </i> 2 single beds, can be moved together", "https://www.airbnb.dk/rooms/50003907?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_F3oSvw5Pw%2BacT%2BOu&guests=1&adults=1")
             }
 
             const bookingBorder = document.createElement('bookingBorder');

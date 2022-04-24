@@ -386,9 +386,9 @@ growBoxBottom {
 
 
 
-@media (max-width: 34rem) {
+@media (max-width: 50rem) {
     CenteringBox {
-     width: 34rem;
+     width: 50rem;
      min-width: 280px;
     }
     pictureFrame {
@@ -414,9 +414,9 @@ growBoxBottom {
  
   }
   
-  @media (min-width: 34rem) {
+  @media (min-width: 50rem) {
     CenteringBox {
-      width: 34rem;
+      width: 50rem;
     }
 
     pictureFrame {
