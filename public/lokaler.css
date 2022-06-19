@@ -115,6 +115,8 @@ pictureFrameSmall {
 
 img {
   border-radius: 20px;
+  /* margin: 4px; */
+  /* z-index: -1; */
 }
 
 bookingFrameBlock {
@@ -128,7 +130,7 @@ bookingFrame {
 
 bookingFrameDescription {
   display: block;
-  width: 50%;
+  /* width: 50%; */
   /* padding: 00px 00px 10px 00px; */
 }
 
@@ -207,6 +209,43 @@ bookingFrameCostDescription {
   z-index: 1;
 }
 
+bottomMenuBox {
+  border-top: 1px solid black;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+  /* height: 60px; */
+  background-color: white;
+  align-items: center;
+  justify-content: space-around;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bottomMenuButton {
+  display: flex;
+  background-color: white;
+
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  width: 50%;
+  justify-content: center;
+  margin: 10px;
+  cursor: pointer;
+  color: black;
+  border: 1px white solid;
+  text-decoration: none;
+}
+
+.bottomMenuButton:hover {
+  /* filter: invert(1); */
+  text-decoration: underline;
+  border: 1px black solid;
+  border-radius: 50px;
+}
+
 mobilepay {
   display: block;
   text-align: center;
@@ -263,27 +302,6 @@ map {
 bookingText {
   display: block;
   margin: 00px 20px 00px 20px;
-}
-
-bookingBottomButton {
-  /* outline: 1px red solid; */
-  position: fixed;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 30%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /* display: flex; */
-  color: white;
-  text-align: center;
-  background-color: rgb(0, 133, 82);
-  border-radius: 500px;
-  box-shadow: 0px 0px 5px grey;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 900;
-  margin-bottom: 10px;
 }
 
 bookingBottomDirect {
@@ -447,45 +465,7 @@ growBoxBottom {
   #bookingBottomButtonID {
     width: 30rem;
   }
-
   bottomMenuBox {
     width: 50rem;
   }
-}
-
-bottomMenuBox {
-  border-top: 1px solid black;
-  display: flex;
-  position: fixed;
-  bottom: 0px;
-  z-index: 1;
-  /* height: 60px; */
-  background-color: white;
-  align-items: center;
-  justify-content: space-around;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.bottomMenuButton {
-  display: flex;
-  background-color: white;
-
-  font-family: 'Amatic SC', cursive;
-  font-size: 30px;
-  font-weight: bold;
-  width: 50%;
-  justify-content: center;
-  margin: 10px;
-  cursor: pointer;
-  color: black;
-  border: 1px white solid;
-  text-decoration: none;
-}
-
-.bottomMenuButton:hover {
-  /* filter: invert(1); */
-  text-decoration: underline;
-  border: 1px black solid;
-  border-radius: 50px;
 }
