@@ -148,6 +148,7 @@ bookingFrameCost {
   border-radius: 20px;
   box-shadow: 0px 0px 5px grey;
   /* outline: red solid 1px; */
+  height: fit-content;
 }
 
 bookingFrameCostText {
@@ -262,6 +263,10 @@ mobilepay {
   display: block;
   font-weight: 500;
   font-size: 20px;
+}
+
+bookinFrameTitle {
+  padding: 20px 20px 0px 20px;
 }
 
 languageBoxBlock {

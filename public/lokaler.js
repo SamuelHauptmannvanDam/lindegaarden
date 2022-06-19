@@ -47,7 +47,7 @@ adjustScreenWidth();
 const paddingboxBottom = document.createElement('paddingboxBottom');
 centeringBox.appendChild(paddingboxBottom);
 
-import { toDanish, toEnglish } from './language.js';
+import { toDanish, toEnglish } from './languageLokaler.js';
 fetch(
   'https://api.geoapify.com/v1/ipinfo?apiKey=fb0e13a6fe3b4773ab9d95edbbd12e7e'
 )

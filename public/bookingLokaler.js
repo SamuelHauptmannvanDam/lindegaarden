@@ -13,10 +13,16 @@ export function bookingFunction(centeringBox, language) {
   bookingFrameDescription.id = 'bookingFrameDescriptionID';
   bookingFrame.appendChild(bookingFrameDescription);
 
-  const breakfastTitle = document.createElement('breakfastTitle');
-  breakfastTitle.id = 'breakfastTitleID';
-  breakfastTitle.className = 'infoTitle';
-  bookingFrameDescription.appendChild(breakfastTitle);
+  // const breakfastTitle = document.createElement('breakfastTitle');
+  // breakfastTitle.id = 'breakfastTitleID';
+  // breakfastTitle.className = 'infoTitle';
+  // bookingFrameDescription.appendChild(breakfastTitle);
+
+  const bookinFrameTitle = document.createElement('bookinFrameTitle');
+  bookinFrameTitle.id = 'bookinFrameTitleID';
+  bookinFrameTitle.className = 'infoTitle';
+  bookinFrameTitle.innerHTML = 'Leje af Lindegaardens Saloner';
+  bookingFrameDescription.appendChild(bookinFrameTitle);
 
   const bookingFrameDescriptionText = document.createElement(
     'bookingFrameDescriptionText'
@@ -67,20 +73,26 @@ export function bookingFunction(centeringBox, language) {
           'mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.%0D%0DVelkommen til Lindegaardens booking på mail.%0D%0DSkriv blot hvilke værelse(r) der ønskes:%0D%0DHvor mange personer I er:%0D%0DOm der ønskes lækker økologisk morgenmad:%0D%0DHvilke nætter I ønsker at booke:%0D%0DTelefonnummer til kontakt:%0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802 eller skriv her:%0D%0DVi glæder os til at tage imod jer%0D%0DDe bedste hilsner Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde%0D';
 
         sunRoom(
-          '650 kr / nat',
-          '<i>Solværelset: </i>stor dobbeltseng<br>Mulig ekstra opredning af gæsteseng 200 kr.',
+          '4000 kr / nat',
+          'Leje af begge Saloner incl. overnatning til 6 personer i hovedhuset',
           'https://www.airbnb.dk/rooms/50245477?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_qutief9GI1VhK5Ii&guests=1&adults=1'
         );
 
         skyRoom(
-          '575 kr / nat',
-          '<i>Himmelrummet:</i> lille dobbeltseng',
+          '1.200 kr / nat',
+          'Leje af 1 Salon til event',
           'https://www.airbnb.dk/rooms/50240587?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532448_dH7cpFG6Qv0cSTMe&guests=1&adults=1'
         );
 
         studentRoom(
-          '575 kr / nat',
-          '<i>Studerekammeret:</i> 2 enkelte senge, kan rykkes sammen',
+          '2500 kr / nat',
+          'Leje af 1 salon til event incl. service og opvask op til 30 personer',
+          'https://www.airbnb.dk/rooms/50003907?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_F3oSvw5Pw%2BacT%2BOu&guests=1&adults=1'
+        );
+
+        rentRoom(
+          '1200 kr / nat',
+          'Leje af 1 Salon til event',
           'https://www.airbnb.dk/rooms/50003907?translate_ugc=false&federated_search_id=bf966e2b-73a5-45f9-a58c-e2c02d76cc21&source_impression_id=p3_1626532449_F3oSvw5Pw%2BacT%2BOu&guests=1&adults=1'
         );
       } else {
@@ -128,18 +140,14 @@ export function bookingFunction(centeringBox, language) {
     bookingTextSunRoom.innerHTML = text;
     frameSunRoom.appendChild(bookingTextSunRoom);
 
-    const bookingButton = document.createElement('bookingButton');
+    const bookingButton = document.createElement('a');
     bookingButton.id = 'bookingButtonID';
     bookingButton.className = 'bookingFrameCostButton';
     bookingButton.onclick = function () {
       airbnb(link);
     };
-    bookingButton.innerHTML = 'BOOK AIRBNB';
+    bookingButton.innerHTML = 'BOOK';
     frameSunRoom.appendChild(bookingButton);
-
-    function airbnb(link) {
-      window.open(link);
-    }
   }
 
   function skyRoom(cost, text, link) {
@@ -158,18 +166,15 @@ export function bookingFunction(centeringBox, language) {
     bookingTextSkyRoom.innerHTML = text;
     frameSkyRoom.appendChild(bookingTextSkyRoom);
 
-    const bookingButton = document.createElement('bookingButton');
+    const bookingButton = document.createElement('a');
     bookingButton.id = 'bookingButtonID';
     bookingButton.className = 'bookingFrameCostButton';
     bookingButton.onclick = function () {
       airbnb(link);
     };
-    bookingButton.innerHTML = 'BOOK AIRBNB';
-    frameSkyRoom.appendChild(bookingButton);
+    bookingButton.innerHTML = 'BOOK';
 
-    function airbnb(link) {
-      window.open(link);
-    }
+    frameSkyRoom.appendChild(bookingButton);
   }
 
   function studentRoom(cost, text, link) {
@@ -192,17 +197,49 @@ export function bookingFunction(centeringBox, language) {
     bookingTextStudentRoom.innerHTML = text;
     frameStudentRoom.appendChild(bookingTextStudentRoom);
 
-    const bookingButton = document.createElement('bookingButton');
+    const bookingButton = document.createElement('a');
     bookingButton.id = 'bookingButtonID';
     bookingButton.className = 'bookingFrameCostButton';
     bookingButton.onclick = function () {
       airbnb(link);
     };
-    bookingButton.innerHTML = 'BOOK AIRBNB';
+    bookingButton.innerHTML = 'BOOK';
     frameStudentRoom.appendChild(bookingButton);
-
-    function airbnb(link) {
-      window.open(link);
-    }
   }
+
+  function rentRoom(cost, text, link) {
+    const frameStudentRoom = document.createElement('frameStudentRoom');
+    frameStudentRoom.className = 'roomFrame';
+    bookingFrameCost.appendChild(frameStudentRoom);
+
+    const bookingCostStudentRoom = document.createElement(
+      'bookingCostStudentRoom'
+    );
+    bookingCostStudentRoom.id = 'bookingCostStudentRoomID';
+    bookingCostStudentRoom.className = 'infoTitle';
+    bookingCostStudentRoom.innerHTML = cost;
+    frameStudentRoom.appendChild(bookingCostStudentRoom);
+
+    const bookingTextStudentRoom = document.createElement(
+      'bookingTextStudentRoom'
+    );
+    bookingTextStudentRoom.id = 'bookingTextStudentRoomID';
+    bookingTextStudentRoom.innerHTML = text;
+    frameStudentRoom.appendChild(bookingTextStudentRoom);
+
+    const bookingButton = document.createElement('a');
+    bookingButton.id = 'bookingButtonID';
+    bookingButton.className = 'bookingFrameCostButton';
+    bookingButton.onclick = function () {
+      airbnb(link);
+    };
+    bookingButton.innerHTML = 'BOOK';
+    frameStudentRoom.appendChild(bookingButton);
+  }
+}
+
+function airbnb(link) {
+  window.open(
+    'mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.%0D%0DVelkommen til Lindegaardens booking på mail.%0D%0DSkriv blot hvilke værelse(r) der ønskes:%0D%0DHvor mange personer I er:%0D%0DOm der ønskes lækker økologisk morgenmad:%0D%0DHvilke nætter I ønsker at booke:%0D%0DTelefonnummer til kontakt:%0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802 eller skriv her:%0D%0DVi glæder os til at tage imod jer%0D%0DDe bedste hilsner Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde%0D'
+  );
 }

@@ -1,7 +1,7 @@
 export function historyContactFunction(centeringBox) {
   const checkinBox = document.createElement('checkinBox');
   checkinBox.className = 'info';
-  centeringBox.appendChild(checkinBox);
+  // centeringBox.appendChild(checkinBox);
 
   const checkinTitle = document.createElement('checkinTitle');
   checkinTitle.innerHTML = 'Check in';
@@ -50,12 +50,12 @@ export function historyContactFunction(centeringBox) {
   rentBox.className = 'info';
   centeringBox.appendChild(rentBox);
 
-  const rentTitle = document.createElement('rentTitle');
-  rentTitle.innerHTML = 'Leje af Lindegaardens Saloner';
-  rentTitle.className = 'infoTitle';
-  rentBox.appendChild(rentTitle);
+  // const rentTitle = document.createElement('rentTitle');
+  // rentTitle.innerHTML = 'Leje af Lindegaardens Saloner';
+  // rentTitle.className = 'infoTitle';
+  // rentBox.appendChild(rentTitle);
 
-  const rentDescription = document.createElement('rentDescription');
-  rentDescription.id = 'rentDescriptionID';
-  rentBox.appendChild(rentDescription);
+  // const rentDescription = document.createElement('rentDescription');
+  // rentDescription.id = 'rentDescriptionID';
+  // rentBox.appendChild(rentDescription);
 }

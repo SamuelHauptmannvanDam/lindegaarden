@@ -92,7 +92,7 @@ export function language(centeringBox) {
         'Økologisk morgenmad 130 kr<br>Børn halv pris';
     }
     document.getElementById('bookingFrameDescriptionTextID').innerHTML =
-      'Ost eller pølse, 1 skive hjemmebagt rugbrød, 1 hjemmebagt langtidshævet bolle, smør, hjemmelavet marmelade, græsk yoghurt med bær og hjemmelavet müsli, et stykke sødt, saft eller juice, the eller kaffe. <br><br>Efter ønske anrettes lækker morgenmad mellem 7.30-10.30.';
+      'Leder du efter et mødelokale? Måske for en hel weekend, med plads til at overnatte for 8 deltagere, eller skal du holde anden event/familiefrokost med plads op til 30 siddende, spisende gæster, så kan du leje Lindegaardens stemningsfulde Saloner. Rammerne på Lindegaarden i hovedhuset er 2 store stuer/saloner, bad og toilet, adgang til køleskab, mikroovn, elkedel, kaffemaskiner og service op til 30 personer. Desuden har vi en hyggelig hytte i baghaven med 2 enkelte senge. Vi kan efter aftale dække op ved langborde og uanset om I bestiller mad udefra eller selv medbringer, skal I blot stille det brugte service på de anviste borde, fjerne madrester og tømme skraldespande. Så tager vi os af både opvask og rengøring. Desuden er I velkomne i den fine, gamle have med flere hyggekroge, grill og bålplads, samt plads til spil og leg. Tillæg til kul og brænde 100 kr. Vælger jeres gæster at indkvartere sig for natten i vores hyggelige værelser, er det naturligvis muligt at bestille dejlig, økologisk morgenmad dagen efter til 130 kr pr. person. Ring eller skriv og vi laver den aftale der passer til lige præcis jeres arrangement.';
     if (document.getElementById('checkinID') != null) {
       document.getElementById('checkinID').innerHTML =
         'Der kan tjekkes ind fra kl. 13 og der skal tjekkes ud næste dag senest kl. 11.<br>Prisen er incl. sengelinned og håndklæde. <br>Der betales på mobilpay ved booking eller senest 10 dage før overnatning.';
@@ -109,18 +109,18 @@ export function language(centeringBox) {
     document.getElementById('kontaktTitleID').innerHTML = 'Kontakt';
     document.getElementById('kontaktID').innerHTML =
       "Lisbeth Hauptmann <br><a href='https://goo.gl/maps/cdab5TEhM2XbmaeB9'>Herslev Bygade 1 4000 Roskilde</a><br>Ring på <a href='tel:+4571707802'>71707802</a><br>Send en mail på  <a href = 'mailto: lindegaardenbnb@gmail.com'>lindegaardenbnb@gmail.com</a>";
-    document.getElementById('bookingDirectID').innerHTML = 'BOOK DIREKTE';
-    document.getElementById('bookingBottomButtonID').innerHTML = 'BOOK DIREKTE';
+    document.getElementById('bookingDirectID').innerHTML = 'BOOK LOKALER';
+    document.getElementById('bookingBottomButtonID').innerHTML = 'BOOK LOKALER';
     document.getElementById('bookingDirectID').href =
       'mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.%0D%0DVelkommen til Lindegaardens booking på mail.%0D%0DSkriv blot hvilke værelse(r) der ønskes:%0D%0DHvor mange personer I er:%0D%0DOm der ønskes lækker økologisk morgenmad:%0D%0DHvilke nætter I ønsker at booke:%0D%0DTelefonnummer til kontakt:%0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802 eller skriv her:%0D%0DVi glæder os til at tage imod jer%0D%0DDe bedste hilsner Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde%0D';
     document.getElementById('bookingBottomButtonID').href =
       'mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.%0D%0DVelkommen til Lindegaardens booking på mail.%0D%0DSkriv blot hvilke værelse(r) der ønskes:%0D%0DHvor mange personer I er:%0D%0DOm der ønskes lækker økologisk morgenmad:%0D%0DHvilke nætter I ønsker at booke:%0D%0DTelefonnummer til kontakt:%0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802 eller skriv her:%0D%0DVi glæder os til at tage imod jer%0D%0DDe bedste hilsner Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde%0D';
-    document.getElementById('bookingCostSunRoomID').innerHTML = '650 kr / nat';
+    document.getElementById('bookingCostSunRoomID').innerHTML = '4000 kr / nat';
     document.getElementById('bookingTextSunRoomID').innerHTML =
-      '<i>Solværelset: </i>stor dobbeltseng<br>Mulig ekstra opredning af gæsteseng 200 kr.';
-    document.getElementById('bookingCostSkyRoomID').innerHTML = '575 kr / nat';
+      'Leje af begge Saloner incl. overnatning til 6 personer i hovedhuset';
+    document.getElementById('bookingCostSkyRoomID').innerHTML = '4300 kr / nat';
     document.getElementById('bookingTextSkyRoomID').innerHTML =
-      '<i>Himmelrummet:</i> lille dobbeltseng';
+      'Leje af begge Saloner incl. overnatning til 8 personer, hovedhus + havehytte:';
   }
 }
 
@@ -253,7 +253,7 @@ export function toDanish() {
       'Økologisk morgenmad 130 kr<br>Børn halv pris';
   }
   document.getElementById('bookingFrameDescriptionTextID').innerHTML =
-    'Ost eller pølse, 1 skive hjemmebagt rugbrød, 1 hjemmebagt langtidshævet bolle, smør, hjemmelavet marmelade, græsk yoghurt med bær og hjemmelavet müsli, et stykke sødt, saft eller juice, the eller kaffe. <br><br>Efter ønske anrettes lækker morgenmad mellem 7.30-10.30.';
+    'Leder du efter et mødelokale? Måske for en hel weekend, med plads til at overnatte for 8 deltagere, eller skal du holde anden event/familiefrokost med plads op til 30 siddende, spisende gæster, så kan du leje Lindegaardens stemningsfulde Saloner. Rammerne på Lindegaarden i hovedhuset er 2 store stuer/saloner, bad og toilet, adgang til køleskab, mikroovn, elkedel, kaffemaskiner og service op til 30 personer. Desuden har vi en hyggelig hytte i baghaven med 2 enkelte senge. Vi kan efter aftale dække op ved langborde og uanset om I bestiller mad udefra eller selv medbringer, skal I blot stille det brugte service på de anviste borde, fjerne madrester og tømme skraldespande. Så tager vi os af både opvask og rengøring. Desuden er I velkomne i den fine, gamle have med flere hyggekroge, grill og bålplads, samt plads til spil og leg. Tillæg til kul og brænde 100 kr. Vælger jeres gæster at indkvartere sig for natten i vores hyggelige værelser, er det naturligvis muligt at bestille dejlig, økologisk morgenmad dagen efter til 130 kr pr. person. Ring eller skriv og vi laver den aftale der passer til lige præcis jeres arrangement.';
 
   if (document.getElementById('checkinID') != null) {
     document.getElementById('checkinID').innerHTML =
@@ -272,16 +272,16 @@ export function toDanish() {
   document.getElementById('kontaktTitleID').innerHTML = 'Kontakt';
   document.getElementById('kontaktID').innerHTML =
     "Lisbeth Hauptmann <br><a href='https://goo.gl/maps/cdab5TEhM2XbmaeB9'>Herslev Bygade 1 4000 Roskilde</a><br>Ring på <a href='tel:+4571707802'>71707802</a><br>Send en mail på  <a href = 'mailto: lindegaardenbnb@gmail.com'>lindegaardenbnb@gmail.com</a>";
-  document.getElementById('bookingDirectID').innerHTML = 'BOOK DIREKTE';
-  document.getElementById('bookingBottomButtonID').innerHTML = 'BOOK DIREKTE';
+  document.getElementById('bookingDirectID').innerHTML = 'BOOK LOKALER';
+  document.getElementById('bookingBottomButtonID').innerHTML = 'BOOK LOKALER';
   document.getElementById('bookingDirectID').href =
     'mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.%0D%0DVelkommen til Lindegaardens booking på mail.%0D%0DSkriv blot hvilke værelse(r) der ønskes:%0D%0DHvor mange personer I er:%0D%0DOm der ønskes lækker økologisk morgenmad:%0D%0DHvilke nætter I ønsker at booke:%0D%0DTelefonnummer til kontakt:%0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802 eller skriv her:%0D%0DVi glæder os til at tage imod jer%0D%0DDe bedste hilsner Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde%0D';
   document.getElementById('bookingBottomButtonID').href =
     'mailto: lindegaardenbnb@gmail.com?subject=Booking dates&body=Kære gæst.%0D%0DVelkommen til Lindegaardens booking på mail.%0D%0DSkriv blot hvilke værelse(r) der ønskes:%0D%0DHvor mange personer I er:%0D%0DOm der ønskes lækker økologisk morgenmad:%0D%0DHvilke nætter I ønsker at booke:%0D%0DTelefonnummer til kontakt:%0D%0DSkulle der være nogle spørgsmål er I velkomne til at ringe på 71707802 eller skriv her:%0D%0DVi glæder os til at tage imod jer%0D%0DDe bedste hilsner Lisbeth%0DLindegaardens Saloner%0DHerslev Bygade 1, Lejre%0D4000 Roskilde%0D';
-  document.getElementById('bookingCostSunRoomID').innerHTML = '650 kr / nat';
+  document.getElementById('bookingCostSunRoomID').innerHTML = '4000 kr / nat';
   document.getElementById('bookingTextSunRoomID').innerHTML =
-    '<i>Solværelset: </i>stor dobbeltseng<br>Mulig ekstra opredning af gæsteseng 200 kr.';
-  document.getElementById('bookingCostSkyRoomID').innerHTML = '575 kr / nat';
+    'Leje af begge Saloner incl. overnatning til 6 personer i hovedhuset';
+  document.getElementById('bookingCostSkyRoomID').innerHTML = '4300 kr / nat';
   document.getElementById('bookingTextSkyRoomID').innerHTML =
-    '<i>Himmelrummet:</i> lille dobbeltseng';
+    'Leje af begge Saloner incl. overnatning til 8 personer, hovedhus + havehytte:';
 }
