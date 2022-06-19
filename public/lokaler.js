@@ -25,7 +25,7 @@ function linkHome() {
   window.location.href = 'https://lindegaardenbnb.dk/';
 }
 
-import { imagesFunction } from './imageFunction.js';
+import { imagesFunction } from './imageLokaler.js';
 imagesFunction(centeringBox);
 
 import { bookingFunction } from './bookingLokaler.js';
